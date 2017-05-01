@@ -1,20 +1,131 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-#section1 .fp-bg{
-    background-image: url('http://lorempixel.com/800/600/');
+//compass
+@import "node_modules/compass-mixins/lib/_compass.scss";
+button, .btn{ border-radius: 0; background: transparent; color: #fff; }
+
+h1,h2,a,p{
+	color:white;
+	font-weight:100;
+
+	.tinted &{
+		color:black;
+		text-shadow:0 1px 1px rgba(255,255,255,.2);
+	}
+}
+
+h2{ font-size: 18px }
+
+p{
+  font-size: 12px;
+  margin: 20px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+
+    a{
+      font-weight: 700;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+#fullpage{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+.slide{
+
+}
+#section1 {
+    background-image: url('/images/backgrounds/1.jpg');
     background-size: cover;
     background-position: center 80%;
 }
 
-.section{
-    font-size: 6em;
+#slide2-1{
+
+    background-image: url('/images/backgrounds/2.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+#slide2-2{
+    background-image: url('/images/backgrounds/3.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+
+
+.navbar{
+    background: transparent url('/images/000000-0.85.png') top left repeat;
+    color: #fff;
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.navbar a{
+    color: #fff !important;
+}
+
+.tournament-container{
+    color: #fff;
+    padding: 50px;
+    margin: 0 auto;
+    width: 75%;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.3+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+
+    border-radius:5px;
+
+    @include box-shadow(0 20px 30px rgba(0,0,0,.6));
+    border:1px solid rgba(255,255,255,.3);
+    padding:20px;
     text-align: center;
+    @include box-sizing(border-box);
+    text-shadow:0 1px 1px rgba(0,0,0,.4);
+    display: flex;
+    transition: box-shadow .3s ease;
+}
+
+
+
+
+
+
+#section3{
+
+    background-image: url('/images/backgrounds/AAAKids-Soccer.jpg');
+    background-size: cover;
+    background-position: center 80%;
+
+	// background-image:url($normal-img);
+	// background-repeat:no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
+
+	//font-family:Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+
 }
