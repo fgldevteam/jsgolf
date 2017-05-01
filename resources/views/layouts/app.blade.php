@@ -48,8 +48,8 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Upcoming Tournaments</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tournaments">Upcoming Tournaments</a></li>
                         <li><a href="#">Auctions</a></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())

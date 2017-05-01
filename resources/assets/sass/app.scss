@@ -7,3 +7,14 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+#section1 .fp-bg{
+    background-image: url('http://lorempixel.com/800/600/');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+.section{
+    font-size: 6em;
+    text-align: center;
+}

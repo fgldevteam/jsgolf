@@ -5,6 +5,16 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap')
+// require('./bootstrap')
 
-alert("jlsdKLJaslkd megha");
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
+$('#fullpage').fullpage({
+    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke']
+});
+
+// $.fn.fullpage.parallax.init();
+// $.fn.fullpage.parallax.setOption('type', 'cover');
+// $.fn.fullpage.parallax.setOption('percentage', '30');
