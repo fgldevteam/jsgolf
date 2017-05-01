@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTeamsTable extends Migration
+class CreateTeamPlayersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,19 @@ class CreateTeamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('teams', function (Blueprint $table) {
+        Schema::create('team_players', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('team_name');
-            $table->integer('team_captain')->unsigned();
-            $table->integer('event_id')->unsigned();
+            $table->integer('team_id')->unsigned();
+            $table->integer('player_id')->unsigned();
             $table->timestamps();
-            $table->foreign('team_captain', 'teams_ibfk_1')
+            $table->foreign('team_id', 'team_players_ibfk_1')
                     ->references('id')
-                    ->on('users')
+                    ->on('teams')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');
-            $table->foreign('event_id', 'teams_ibfk_2')
+            $table->foreign('player_id', 'team_players_ibfk_2')
                     ->references('id')
-                    ->on('events')
+                    ->on('users')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');
             $table->softDeletes();
@@ -40,6 +39,6 @@ class CreateTeamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teams');
+        Schema::dropIfExists('team_players');
     }
 }
