@@ -7,6 +7,8 @@
             <div class="fp-bg"></div>
             home
         </div>
+
+        <!--Tournaments -->
         <div class="section" id="section2" data-anchor="tournaments">
             <div class="slide" id="slide2-1">
                 <div class="fp-bg"></div>
@@ -44,7 +46,59 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section3" data-anchor="about">
+
+
+        <!-- AUCTIONS -->
+        <div class="section" id="section3" data-anchor="auctions">
+            <div class="slide" id="slide3-1">
+                <div class="fp-bg"></div>
+                <div class="tournament-container">
+                    <div class="content">
+                        <h1>Calgary Jumpstart Golf Tournament Auction</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                        </ul>
+
+                        <button type="button" class="btn btn-default">View the Auction</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="slide3-2">
+                <div class="fp-bg"></div>
+                <div class="tournament-container">
+                    <div class="content">
+                        <h1>Some other totally different auction</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <ul>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                            <li>asdasdasdas sa</li>
+                        </ul>
+
+                        <button type="button" class="btn btn-default">Register a team</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+        <div class="section" id="section4" data-anchor="about">
             <div class="fp-bg"></div>
             <div class="tournament-container">
                 <div class="content">

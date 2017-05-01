@@ -49,8 +49,8 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#tournaments">Upcoming Tournaments</a></li>
+                        <li><a href="#auctions">Auctions</a></li>
                         <li><a href="#about">About Jumpstart</a></li>
-                        <li><a href="#">Auctions</a></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             {{-- <li><a href="{{ route('login') }}">Login</a></li>
