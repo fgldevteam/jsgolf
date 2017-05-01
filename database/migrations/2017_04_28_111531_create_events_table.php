@@ -30,6 +30,8 @@ class CreateEventsTable extends Migration
                     ->on('event_types')
                     ->onDelete('CASCADE')
                     ->onUpdate('CASCADE');
+            $table->timestamps();
+            $table->softDeletes();
 
         });
     }

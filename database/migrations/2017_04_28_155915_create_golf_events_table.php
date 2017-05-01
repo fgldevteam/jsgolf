@@ -33,6 +33,8 @@ class CreateGolfEventsTable extends Migration
 
             $table->foreign('event_id', 'golf_events_ibfk_1')->references('id')->on('events')->onDelete('CASCADE
 ')->onUpdate('RESTRICT');
+            $table->timestamps();
+            $table->softDeletes();
 
         });
     }

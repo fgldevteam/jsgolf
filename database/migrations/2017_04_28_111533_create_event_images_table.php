@@ -10,36 +10,38 @@ use Illuminate\Database\Migrations\Migration;
  */
 class CreateEventImagesTable extends Migration
 {
-    // /**
-    //  * Run the migrations.
-    //  *
-    //  * @return void
-    //  */
-    // public function up()
-    // {
-    //     Schema::create('event_images', function (Blueprint $table) {
-    //         $table->increments('id');
-    //         $table->unsignedInteger('event_id');
-    //         $table->string('image', 255);
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('event_images', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('event_id');
+            $table->string('image', 255);
 
-    //         $table->index('event_id', 'event_id');
+            $table->index('event_id', 'event_id');
 
-    //         $table->foreign('event_id', 'event_images_ibfk_1')
-    //             ->references('id')
-    //             ->on('events')
-    //             ->onDelete('CASCADE')
-    //             ->onUpdate('CASCADE');
+            $table->foreign('event_id', 'event_images_ibfk_1')
+                ->references('id')
+                ->on('events')
+                ->onDelete('CASCADE')
+                ->onUpdate('CASCADE');
+            $table->timestamps();
+            $table->softDeletes();
 
-    //     });
-    // }
+        });
+    }
 
-    // /**
-    //  * Reverse the migrations.
-    //  *
-    //  * @return void
-    //  */
-    // public function down()
-    // {
-    //     Schema::dropIfExists('event_images');
-    // }
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('event_images');
+    }
 }

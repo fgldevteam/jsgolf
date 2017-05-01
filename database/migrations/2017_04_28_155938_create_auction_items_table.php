@@ -25,10 +25,8 @@ class CreateAuctionItemsTable extends Migration
             $table->dateTime('end_date');
             $table->tinyInteger('reserve_price');
             $table->integer('minimum_bid_increment');
-
-            
-
-            
+            $table->timestamps();
+            $table->softDeletes();            
 
         });
     }

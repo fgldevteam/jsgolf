@@ -31,6 +31,8 @@ class CreateAuctionEventsTable extends Migration
                     ->on('auction_items')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');           
+            $table->timestamps();
+            $table->softDeletes();
 
         });
     }
