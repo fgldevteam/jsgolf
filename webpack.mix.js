@@ -15,7 +15,8 @@ const { mix } = require('laravel-mix');
 
 mix.styles([ //vendor
        'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
-       'node_modules/admin-lte/dist/css/AdminLTE.min.css',
+       'node_modules/bootstrap/dist/css/bootstrap.css',
+       'node_modules/admin-lte/dist/css/AdminLTE.css',
    ], 'public/css/vendor.css');
 
 
@@ -23,15 +24,18 @@ mix.sass('resources/assets/sass/app.scss', 'public/css/app.css');
 
 mix.scripts([ //vendor
        'node_modules/jquery/dist/jquery.js',
+       'node_modules/bootstrap/dist/js/bootstrap.js',
        'node_modules/fullpage.js/vendors/jquery.easings.min.js',
        'node_modules/fullpage.js/vendors/jquery.slimscroll.min.js',
        'node_modules/fullpage.js/vendors/scrolloverflow.min.js',
        'node_modules/fullpage.js/dist/jquery.fullpage.js',
-       'resources/assets/js/bootstrap.js',
-       'node_modules/admin-lte/dist/js/app.min.js',
+       'node_modules/admin-lte/dist/js/app.js',
    ], 'public/js/vendor.js');
 
-mix.js('resources/assets/js/app.js', 'public/js')
+// mix.js('resources/assets/js/app.js', 'public/js')
+mix.scripts([
+      'resources/assets/js/app.js'
+  ], 'public/js/app.js');
 
 
 if (mix.config.inProduction) {
