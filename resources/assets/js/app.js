@@ -5,6 +5,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+require('./bootstrap')
 // require('./bootstrap')
 
 $(document).ready(function() {
@@ -18,3 +19,4 @@ $('#fullpage').fullpage({
 // $.fn.fullpage.parallax.init();
 // $.fn.fullpage.parallax.setOption('type', 'cover');
 // $.fn.fullpage.parallax.setOption('percentage', '30');
+

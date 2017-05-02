@@ -19,6 +19,7 @@ class CreateAuctionItemsTable extends Migration
     {
         Schema::create('auction_items', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('auction_event_id')->unsigned();
             $table->string('title', 255);
             $table->text('description');
             $table->dateTime('start_date');
@@ -27,6 +28,11 @@ class CreateAuctionItemsTable extends Migration
             $table->integer('minimum_bid_increment');
             $table->timestamps();
             $table->softDeletes();            
+            $table->foreign('auction_event_id')
+                    ->references('id')
+                    ->on('auction_events')
+                    ->onDelete('cascade');
+
 
         });
     }
