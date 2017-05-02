@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/auction', function () {
+    return view('auction');
+});
+
+Route::get('/auction/item', function () {
+    return view('auction-item');
+});

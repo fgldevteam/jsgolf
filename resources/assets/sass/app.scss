@@ -22,9 +22,46 @@ h1,h2,a,p{
 	}
 }
 
+.auction *{
+    color: #333;
+    font-weight: normal;
+}
+
+.auction .item{
+    border-bottom: 1px solid #ccc;
+}
+.auction strong{
+    font-weight: bold;
+}
+
+.auction a{
+    color: #00c;
+}
+
+.current-bid-price{
+    padding: 0px 0px 5px 0px !important;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.auction .item-title{
+    font-weight: bold;
+}
+
+.auction-items {
+    padding: 20px 0px;
+}
+
+.auction-items .row{
+    padding: 10px 0px;
+}
+.grey{
+    background-color: #fcfcfc;
+}
+
 h2{ font-size: 18px }
 
-p{
+.tournament-container p{
   font-size: 12px;
   margin: 20px;
   &.related{
@@ -32,7 +69,7 @@ p{
     font-weight: 700;
     color: #444;
 
-    a{
+    .tournament-container a{
       font-weight: 700;
       text-decoration: none;
       &:hover{
