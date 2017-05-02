@@ -15,6 +15,7 @@ const { mix } = require('laravel-mix');
 
 mix.styles([ //vendor
        'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
+       'node_modules/admin-lte/dist/css/AdminLTE.min.css',
    ], 'public/css/vendor.css');
 
 
@@ -26,7 +27,8 @@ mix.scripts([ //vendor
        'node_modules/fullpage.js/vendors/jquery.slimscroll.min.js',
        'node_modules/fullpage.js/vendors/scrolloverflow.min.js',
        'node_modules/fullpage.js/dist/jquery.fullpage.js',
-       'resources/assets/js/bootstrap.js'
+       'resources/assets/js/bootstrap.js',
+       'node_modules/admin-lte/dist/js/app.min.js',
    ], 'public/js/vendor.js');
 
 mix.js('resources/assets/js/app.js', 'public/js')
