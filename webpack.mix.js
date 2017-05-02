@@ -11,16 +11,24 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-mix.sass('resources/assets/sass/app.scss', 'public/css');
-mix.styles([
+
+mix.styles([ //vendor
        'node_modules/fullpage.js/dist/jquery.fullpage.min.css'
    ], 'public/css/vendor.css');
-mix.scripts([
+
+mix.scripts([ //vendor
        'node_modules/jquery/dist/jquery.js',
+       'node_modules/fullpage.js/vendors/jquery.easings.min.js',
+       'node_modules/fullpage.js/vendors/jquery.slimscroll.min.js',
+       'node_modules/fullpage.js/vendors/scrolloverflow.min.js',
        'node_modules/fullpage.js/dist/jquery.fullpage.js',
-       'node_modules/fullpage.js/dist/jquery.fullpage.extensions.min.js'
+       'resources/assets/js/bootstrap.js'
    ], 'public/js/vendor.js');
+
+mix.js('resources/assets/js/app.js', 'public/js')
+
+mix.sass('resources/assets/sass/app.scss', 'public/css');
+
 if (mix.config.inProduction) {
     mix.version();
 }
