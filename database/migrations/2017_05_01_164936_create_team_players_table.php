@@ -17,7 +17,6 @@ class CreateTeamPlayersTable extends Migration
             $table->increments('id');
             $table->integer('team_id')->unsigned();
             $table->integer('player_id')->unsigned();
-            $table->timestamps();
             $table->foreign('team_id', 'team_players_ibfk_1')
                     ->references('id')
                     ->on('teams')
@@ -28,6 +27,7 @@ class CreateTeamPlayersTable extends Migration
                     ->on('users')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');
+            $table->timestamps();
             $table->softDeletes();
         });
     }

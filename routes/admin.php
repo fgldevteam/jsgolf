@@ -1,4 +1,4 @@
 <?php
 
 Route::get('/admin', 'AdminController@index');
-Route::resource('/admin/event', 'Event\EventAdminController');
+Route::resource('/admin/golf-event', 'Golf\GolfEventAdminController');

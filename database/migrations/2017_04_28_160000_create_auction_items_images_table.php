@@ -24,8 +24,7 @@ class CreateAuctionItemsImagesTable extends Migration
             $table->foreign('auction_item_id', 'auction_items_images_ibfk_1')
                     ->references('id')
                     ->on('auction_items')
-                    ->onDelete('CASCADE')
-                    ->onUpdate('RESTRICT');
+                    ->onDelete('CASCADE');
             $table->timestamps();
             $table->softDeletes();
 

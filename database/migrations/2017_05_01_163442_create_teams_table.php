@@ -18,7 +18,7 @@ class CreateTeamsTable extends Migration
             $table->string('team_name');
             $table->integer('team_captain')->unsigned();
             $table->integer('event_id')->unsigned();
-            $table->timestamps();
+            
             $table->foreign('team_captain', 'teams_ibfk_1')
                     ->references('id')
                     ->on('users')
@@ -26,9 +26,10 @@ class CreateTeamsTable extends Migration
                     ->onUpdate('RESTRICT');
             $table->foreign('event_id', 'teams_ibfk_2')
                     ->references('id')
-                    ->on('events')
+                    ->on('golf_events')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');
+            $table->timestamps();
             $table->softDeletes();
         });
     }

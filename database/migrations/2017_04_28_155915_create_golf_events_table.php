@@ -19,7 +19,8 @@ class CreateGolfEventsTable extends Migration
     {
         Schema::create('golf_events', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('event_id');
+            $table->string('name', 255);
+            $table->text('description');
             $table->date('date');
             $table->time('time');
             $table->text('location');
@@ -28,11 +29,6 @@ class CreateGolfEventsTable extends Migration
             $table->text('rules')->nullable();
             $table->integer('player_price');
             $table->integer('team_price');
-
-            $table->index('event_id', 'event_id');
-
-            $table->foreign('event_id', 'golf_events_ibfk_1')->references('id')->on('events')->onDelete('CASCADE
-')->onUpdate('RESTRICT');
             $table->timestamps();
             $table->softDeletes();
 
