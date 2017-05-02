@@ -21,14 +21,19 @@ class CreateAuctionHistoryTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('auction_item_id');
             $table->integer('bid_price');
+            $table->integer('bidder_id')->unsigned();
             $table->foreign('auction_item_id', 'auction_history_ibfk_1')
                     ->references('id')
                     ->on('auction_items')
                     ->onDelete('CASCADE')
                     ->onUpdate('RESTRICT');    
-
-            
-
+            $table->foreign('bidder_id', 'auction_history_ibfk_2')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('CASCADE')
+                    ->onUpdate('RESTRICT');    
+            $table->timestamps();
+            $table->softDeletes();
             
 
         });
