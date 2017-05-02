@@ -1,0 +1,34 @@
+.navbar{
+    background: transparent url('/images/000000-0.85.png') top left repeat;
+    color: #fff;
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.navbar a{
+    color: #fff !important;
+}
+
+.content-container{
+    color: #fff;
+    padding: 50px;
+    margin: 0 auto;
+    width: 75%;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.3+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+
+    border-radius:5px;
+
+    @include box-shadow(0 20px 30px rgba(0,0,0,.6));
+    border:1px solid rgba(255,255,255,.3);
+    padding:20px;
+    text-align: center;
+    @include box-sizing(border-box);
+    text-shadow:0 1px 1px rgba(0,0,0,.4);
+    display: flex;
+    transition: box-shadow .3s ease;
+}
