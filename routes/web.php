@@ -22,3 +22,7 @@ Route::get('/auction', function () {
 Route::get('/auction/item', function () {
     return view('auction-item');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
