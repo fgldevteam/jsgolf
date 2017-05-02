@@ -11,13 +11,10 @@ const { mix } = require('laravel-mix');
  |
  */
 
-
-
 mix.styles([ //vendor
        'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
        'node_modules/admin-lte/dist/css/AdminLTE.min.css',
    ], 'public/css/vendor.css');
-
 
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css');
 
@@ -32,7 +29,6 @@ mix.scripts([ //vendor
    ], 'public/js/vendor.js');
 
 mix.js('resources/assets/js/app.js', 'public/js')
-
 
 if (mix.config.inProduction) {
     mix.version();

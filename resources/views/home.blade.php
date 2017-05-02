@@ -1,18 +1,26 @@
 @extends('layouts.app')
 
-
 @section('content')
     <div id="fullpage">
         <div class="section" id="section1" data-anchor="home">
             <div class="fp-bg"></div>
-            home
+            <div class="content-container">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </div>
 
         <!--Tournaments -->
         <div class="section" id="section2" data-anchor="tournaments">
             <div class="slide" id="slide2-1">
                 <div class="fp-bg"></div>
-                <div class="tournament-container">
+                <div class="content-container">
                     <div class="content">
                         <img src="/images/cottonwood.png" class="course-logo" />
                         <h1>Calgary Jumpstart Golf Tournament</h1>
@@ -32,7 +40,7 @@
             </div>
             <div class="slide" id="slide2-2">
                 <div class="fp-bg"></div>
-                <div class="tournament-container">
+                <div class="content-container">
                     <div class="content">
                         <img src="/images/masters_txt_001.gif" class="course-logo" />
                         <h1>The Masters Jumpstart Golf Tournament</h1>
@@ -52,7 +60,7 @@
         <div class="section" id="section3" data-anchor="auctions">
             <div class="slide" id="slide3-1">
                 <div class="fp-bg"></div>
-                <div class="tournament-container">
+                <div class="content-container">
                     <div class="content">
                         <h1>Calgary Jumpstart Golf Tournament Auction</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -74,7 +82,7 @@
 
             <div class="slide" id="slide3-2">
                 <div class="fp-bg"></div>
-                <div class="tournament-container">
+                <div class="content-container">
                     <div class="content">
                         <h1>Some other totally different auction</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -96,11 +104,22 @@
 
         </div>
 
+        <!-- ABOUT -->
+        <div class="section" id="section4" data-anchor="sponsors">
+            <div class="fp-bg"></div>
+            <div class="content-container">
+                <div class="content">
+
+                    <h1>Sponsors</h1>
+
+                </div>
+            </div>
+        </div>
 
         <!-- ABOUT -->
-        <div class="section" id="section4" data-anchor="about">
+        <div class="section" id="section5" data-anchor="about">
             <div class="fp-bg"></div>
-            <div class="tournament-container">
+            <div class="content-container">
                 <div class="content">
 
                     <h1>JUMPSTART'S VISION AND CORE PURPOSE</h1>
@@ -119,7 +138,7 @@
 
                 </div>
             </div>
-    </div>
+        </div>
 {{-- <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
