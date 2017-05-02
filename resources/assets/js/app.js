@@ -6,5 +6,3 @@
  */
 
 require('./bootstrap')
-
-alert("jlsdKLJaslkd megha");

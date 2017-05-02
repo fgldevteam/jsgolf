@@ -35,7 +35,6 @@ class CreateAuctionHistoryTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             
-
         });
     }
 
