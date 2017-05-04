@@ -1,8 +1,21 @@
+#jsbanner{
+
+    z-index: 999;
+    position: absolute;
+    top: 5px;
+    width: 326px;
+    height: 160px;
+    background: transparent url('/images/banner.png') top center no-repeat !important;
+}
+
+
 .navbar{
-    background: transparent url('/images/000000-0.85.png') top left repeat;
+    background: transparent url('/images/backgrounds/grass.jpg') top left repeat;
     color: #fff;
     margin-bottom: 0px;
     border: 0;
+    padding: 15px 0px 0px 10px;
+
 }
 
 .navbar a{

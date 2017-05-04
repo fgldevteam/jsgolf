@@ -21,8 +21,11 @@
     </script>
 </head>
 <body>
+
     <div id="app">
+
         <nav class="navbar navbar-default navbar-static-top">
+
             <div class="container">
                 <div class="navbar-header">
 
@@ -37,6 +40,7 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
+
                     </a>
                 </div>
 
@@ -52,12 +56,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
-                            
+
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

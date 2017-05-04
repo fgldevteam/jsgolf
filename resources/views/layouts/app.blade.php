@@ -22,10 +22,16 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
 
+
+
+        <nav class="navbar navbar-default navbar-static-top">
+            <center>
+
+            </center>
+            <div class="container">
+
+                <div class="navbar-header">
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -36,7 +42,8 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{-- {{ config('app.name', 'Laravel') }} --}}
+                        <div id="jsbanner" class=""></div>
                     </a>
                 </div>
 
