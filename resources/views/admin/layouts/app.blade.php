@@ -11,7 +11,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/vendor.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/admin.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -20,44 +20,43 @@
         ]) !!};
     </script>
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
+<body id="admin-body" class="skin-green">
+    <div class="wrapper">
+        <header class="main-header">
+            <a class="logo" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+            <!-- <div class="container"> -->
+                <!-- <div class="navbar-header"> -->
 
                     <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <!-- <div type="button" class="navbar-toggle collapsed sidebar-collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
+                    </div> -->
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
+                    
+                <!-- </div> -->
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="/admin/golf-events">
-                                Golf Tournaments
-                            </a>
-                        </li>
-                    </ul>
+                <div class="navbar-custom-menu" id="app-navbar-collapse">
+                    
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                            
+                            {{-- <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li> --}}
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -81,10 +80,15 @@
                         @endif
                     </ul>
                 </div>
-            </div>
+           <!--  </div> -->
         </nav>
-
-        @yield('content')
+        </header>
+        <aside class="main-sidebar">
+            @include('admin.includes.sidenav')
+        </aside>
+        <div class="content-wrapper">
+            @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->

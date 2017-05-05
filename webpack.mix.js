@@ -15,9 +15,14 @@ mix.styles([ //vendor
        'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
        'node_modules/bootstrap/dist/css/bootstrap.css',
        'node_modules/admin-lte/dist/css/AdminLTE.css',
+       'node_modules/font-awesome/css/font-awesome.css',
+       'node_modules/admin-lte/dist/css/skins/skin-green.css',
+       'node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
    ], 'public/css/vendor.css');
+mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 
 mix.sass('resources/assets/sass/app.scss', 'public/css/app.css');
+mix.sass('resources/assets/sass/admin.scss', 'public/css/admin.css');
 
 mix.scripts([ //vendor
        'node_modules/jquery/dist/jquery.js',
@@ -27,6 +32,9 @@ mix.scripts([ //vendor
        'node_modules/fullpage.js/vendors/scrolloverflow.min.js',
        'node_modules/fullpage.js/dist/jquery.fullpage.js',
        'node_modules/admin-lte/dist/js/app.js',
+       'node_modules/moment/moment.js',
+       'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
+
    ], 'public/js/vendor.js');
 
 // mix.js('resources/assets/js/app.js', 'public/js')

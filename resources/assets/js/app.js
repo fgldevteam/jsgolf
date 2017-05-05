@@ -14,6 +14,14 @@ $(document).ready(function() {
     	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke']
 	});
 
+	$("#datetimepicker").datetimepicker({
+		// time: "fa fa-clock-o",
+		date: "fa fa-calendar",
+  //       up: "fa fa-arrow-up",
+		// down: "fa fa-arrow-down",
+		format: 'YY-MM-DD H:mm:ss'
+	});
+
 });
 
 // $('#fullpage').fullpage({

@@ -10,7 +10,9 @@ class GolfEventAdminController extends Controller
 {
     public function index()
     {
-    	return $golfEvents = GolfEvent::getAllEvents();
+    	$golfEvents = GolfEvent::getAllEvents();
+        // dd($golfEvents->first()->images[0]->image);
+        return view('admin.golf-events.index')->with('golfEvents', $golfEvents);
     }
 
     public function create()
@@ -18,9 +20,9 @@ class GolfEventAdminController extends Controller
     	return view('admin.golf-events.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-
+        GolfEvent::createGolfEvent($request->all());
     }
 
     public function show($id)

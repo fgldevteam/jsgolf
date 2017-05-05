@@ -20,6 +20,9 @@
     "fullpage.js": "^2.9.4",
     "compass-mixins": "0.12.10",
     "admin-lte": "2.3.11",
-    "bootstrap":"3.3.7"
+    "bootstrap":"3.3.7",
+    "font-awesome":"4.7.0",
+    "moment":"2.18.1",
+    "eonasdan-bootstrap-datetimepicker":"4.17.47"
   }
 }
