@@ -11,7 +11,9 @@
 $(document).ready(function() {
     // $('#fullpage').fullpage();
     $('#fullpage').fullpage({
-    	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke']
+    	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+        anchors: ['','tournaments', 'auctions', 'sponsors', 'about'],
+        menu: '#mainmenu'
 	});
 
 });
@@ -23,4 +25,3 @@ $(document).ready(function() {
 // $.fn.fullpage.parallax.init();
 // $.fn.fullpage.parallax.setOption('type', 'cover');
 // $.fn.fullpage.parallax.setOption('percentage', '30');
-

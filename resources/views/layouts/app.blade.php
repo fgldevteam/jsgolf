@@ -54,11 +54,11 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/#tournaments">Upcoming Tournaments</a></li>
-                        <li><a href="/#auctions">Auctions</a></li>
-                        <li><a href="/#sponsors">Sponsors</a></li>
-                        <li><a href="/#about">About Jumpstart</a></li>
+                    <ul class="nav navbar-nav navbar-right" id="mainmenu">
+                        <li data-menuanchor="tournaments"><a href="/#tournaments">Upcoming Tournaments</a></li>
+                        <li data-menuanchor="auctions"><a href="/#auctions">Auctions</a></li>
+                        <li data-menuanchor="sponsors"><a href="/#sponsors">Sponsors</a></li>
+                        <li data-menuanchor="about"><a href="/#about">About Jumpstart</a></li>
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
